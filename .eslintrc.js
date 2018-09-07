@@ -120,5 +120,48 @@ module.exports = {
         "flatTernaryExpressions": false,
         "ignoreComments": false
       }],
+    // Use double quotes for JSX  
+    "jsx-quotes": ["error", "prefer-double"],
+    // Avoid missing key prop
+    "react/jsx-key": "warn",
+    // No normal comment in JSX 
+    "react/jsx-no-comment-textnodes": "error",
+    // Avoid duplicate properties in JSX
+    "react/jsx-no-duplicate-props": "error",
+    // No undeclared varibales in JSX
+    "react/jsx-no-undef": "error",
+    // No unused react import
+    "react/jsx-uses-react": "warn",
+    // No direct mutation of this.state
+    "react/no-direct-mutation-state": "error",
+    // No invalid characters in JSX
+    "react/no-unescaped-entities": "error",
+    // No unknown property (className instead of class)
+    "react/no-unknown-property": "error",
+    // Avoid missing return in render function
+    "react/require-render-return": "error",
+    // Avoid default props do not match prop types
+    "react/default-props-match-prop-types": "error",
+
+    "react/jsx-uses-vars": 2,
+    "react/no-unused-state": 1,
+    "react/jsx-no-duplicate-props": [2, { "ignoreCase": true }],
+    "react/jsx-max-props-per-line": [0, { "maximum": 4, "when": "always" }],
+    "react/boolean-prop-naming": [1,{ "rule": "^(is|has)[A-Z]([A-Za-z0-9]?)+" }],
+    "react/jsx-tag-spacing": [2, {
+        "closingSlash": "never",
+        "beforeSelfClosing": "always",
+        "afterOpening": "never",
+        "beforeClosing": "allow"
+    }],
+    "react/jsx-space-before-closing": 2,
+    "react/jsx-props-no-multi-spaces": 2,
+    "react/jsx-pascal-case": 2,
+    "react/jsx-one-expression-per-line": 2,
+    "react/jsx-indent-props": [2, 2],
+    "react/jsx-indent": [2, 2],
+    "react/jsx-equals-spacing": [2, "never"],
+    "react/jsx-curly-spacing": [2, "never"]
+    "react/jsx-closing-tag-location": 2
   },
 }
